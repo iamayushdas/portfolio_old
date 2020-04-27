@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,9 @@
   "bugs": {
     "url": "https://github.com/iamayushdas/portfolio/issues"
   },
-  "homepage": "https://github.com/iamayushdas/portfolio#readme",
+  "homepage": "https://iamayushdas.github.io/portfolio",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.14.0"
   }
 }
