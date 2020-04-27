@@ -1,6 +1,120 @@
 $primary-color: #444;
+$secondary-color:  yellow;
+$twitter-icon: #00acee;
+$whatsapp-icon: #4FCE5D;
+$linkedin-icon: #0e76a8 ;
+$github-icon: grey;
+$telegram-icon: #0088CC;
+$gmail-icon: #D44638;
+$instagram-icon : rgb(193,53,132); 
+$show-home-img: url('');
+ 
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+*{
+    box-sizing: border-box;
+}
 
 body {
     background: $primary-color;
     color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+// headings
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading{
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+main{
+    padding: 4rem;
+    height: 100%;
+
+    .icons{
+        margin-top: 1rem;
+
+        a{
+            padding: 0.25rem;
+
+            .fa-twitter{
+                &:hover {
+                    color:$twitter-icon;
+                    @include easeOut();
+                }
+            }
+            .fa-whatsapp{
+                &:hover {
+                    color:$whatsapp-icon;
+                    @include easeOut();
+                }
+            }
+            .fa-telegram{
+                &:hover {
+                    color:$telegram-icon;
+                    @include easeOut();
+                }
+            }
+            .fa-linkedin{
+                &:hover {
+                    color:$linkedin-icon;
+                    @include easeOut();
+                }
+            }
+            .fa-instagram{
+                &:hover {
+                    color:$instagram-icon;
+                    @include easeOut();
+                }
+            }
+            .fa-github{
+                &:hover {
+                    color:$github-icon;
+                    @include easeOut();
+                }
+            }
+            .fa-envelope{
+                &:hover {
+                    color:$gmail-icon;
+                    @include easeOut();
+                }
+            }
+
+        }
+    }
+    &#home{
+        overflow: hidden;
+        h1{
+            margin-top: 20vh;
+        }
+    }
 }
