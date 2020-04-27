@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color:  yellow;
+$secondary-color:  rgb(179, 255, 0);
 $twitter-icon: #00acee;
 $whatsapp-icon: #4FCE5D;
 $linkedin-icon: #0e76a8 ;
@@ -8,8 +8,8 @@ $telegram-icon: #0088CC;
 $gmail-icon: #D44638;
 $instagram-icon : rgb(193,53,132); 
 $show-home-img: true;
-$home-image: url('../img/photo_2020-04-27_11-25-49.jpg');
-$background-opacity: 0.7;
+$home-image: url('../img/bg1.png');
+$background-opacity: 0.6;
 
 
 @mixin easeOut {
