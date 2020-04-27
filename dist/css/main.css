@@ -205,6 +205,25 @@ main {
       border-color: #b3ff00;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background-color: #b3ff00;
+      color: black; }
+      .boxes div:hover span {
+        color: black; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -228,6 +247,28 @@ main {
   background: #2b2b2b;
   color: set-text-color(#444);
   height: 60px; }
+
+.typewriter {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  height: 140px; }
+
+@media screen and (max-width: 480px) {
+  .typewriter {
+    height: 90px; } }
+
+.typewriter {
+  animation: type 2s infinite steps(9);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Encode Sans', sans-serif;
+  border-right: 5px solid white; }
+
+@keyframes type {
+  from {
+    width: 0ch; }
+  to {
+    width: 10ch; } }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -276,6 +317,6 @@ main {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 4rem; }
   .projects {
     grid-template-columns: 1fr; } }
